@@ -2,10 +2,16 @@
 
 import { useEffect } from 'react';
 
-const GlowCard = ({ children , identifier}) => {
+const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
+    // Check if we're in the browser before accessing document
+    if (typeof document === 'undefined') return;
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+
+    // Add safety check
+    if (!CONTAINER || !CARDS.length) return;
 
     const CONFIG = {
       proximity: 40,
@@ -64,7 +70,9 @@ const GlowCard = ({ children , identifier}) => {
 
     // Cleanup event listener
     return () => {
-      document.body.removeEventListener('pointermove', UPDATE);
+      if (typeof document !== 'undefined') {
+        document.body.removeEventListener('pointermove', UPDATE);
+      }
     };
   }, [identifier]);
 

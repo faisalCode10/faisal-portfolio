@@ -1,6 +1,7 @@
 const path = require('path')
- 
-module.exports = {
+
+const nextConfig = {
+  trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -24,3 +25,5 @@ module.exports = {
     ],
   },
 }
+
+module.exports = nextConfig

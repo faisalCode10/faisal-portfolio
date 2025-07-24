@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "myworkapp-834e3",
+    "production": "myworkapp-834e3"
+  },
+  "targets": {
+    "myworkapp-834e3": {
+      "hosting": {
+        "faisal-portfolio": [
+          "faisal-portfolio-834e3-59bc2"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

@@ -2,20 +2,30 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
-
-async function getBlogs() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
-
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-
-  const data = await res.json();
-  return data;
-};
+import { useEffect } from "react";
 
 async function page() {
-  const blogs = await getBlogs();
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`);
+        if (!res.ok) throw new Error('Failed to fetch data');
+        const data = await res.json();
+        setBlogs(data);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchBlogs();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
 
   return (
     <div className="py-8">

@@ -138,8 +138,8 @@ export const personalData = {
   description2:
     "My expertise spans multiple areas of web and software development, with a strong foundation in JavaScript and a keen interest in building dynamic, user-friendly applications. I thrive on making technology accessible and effective, contributing to innovative projects that leave a mark. I am open to exciting job opportunities that align with my skills and passion for development.",
   email: "faisal.dev50@gmail.com",
-  phone: "+16673358435",
-  address: "Seattle WA, USA (Open to relocation)",
+  phone: "+923485971114",
+  address: "Islamabad, Pakistan(Open to relocation)",
   github: "https://github.com/faisalCode10",
   facebook: "https://www.facebook.com/faisal/",
   linkedIn: "https://www.linkedin.com/in/faisal-imran15/",

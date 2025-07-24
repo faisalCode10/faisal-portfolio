@@ -1,14 +1,15 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer',
-    company: "Signarama",
+    title: 'App Developer',
+    company: "Britix24",
     duration: "(May 2025 - present)",
-    tools: ['Python', 'Dialogflow', 'Trello', 'Automation', 'Task Management'],
-    image: '/png/signarama.png',
+    tools: ['React Native', 'JavaScript', 'TypeScript', 'Redux', 'Agile'],
+    image: '/png/britix24.png',
     description:
-      'Built an internal chatbot using Python and Dialogflow, enhancing onboarding and training processes by 20%. Automated Trello workflows for task management, resulting in a 35% efficiency boost across teams.'
+      'Led the development of a cross-platform mobile app using React Native, enabling seamless communication and task management for internal teams. Integrated push notifications, real-time updates, and offline-first capabilities, improving overall user engagement by 40%.',
   },
+  
   {
     id: 2,
     title: 'React Native Developer',

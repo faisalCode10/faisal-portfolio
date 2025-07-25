@@ -36,10 +36,10 @@ export default function Home() {
       <Experience />
       <Skills />
       <Projects />
-      <Education />
+      {/* <Education /> */}
       <Testimonials />
       <ContactSection />
-      <Blog blogs={blogs} />
+      {/* <Blog blogs={blogs} /> */}
     </div>
   )
 }

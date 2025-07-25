@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Faisal Imran",
-  profile: '/profile.jpg',
+  profile: '/profile.JPG',
   designation: "Turn Ideas into Code",
   description: "Hey there, I'm Faisal Imran!  I'm that developer who gets unreasonably excited about clean code and stays up way too late debugging. When not chasing the perfect solution, I'm probably exploring some shiny new tech that caught my attention. My learning style? Dive in headfirst and figure out how to swim while falling! Apparently I'm also learning Swimming.",
   description2: "My code is so meticulously organized they make my sock drawer look chaotic—I've been known to refactor perfectly working functions at 2 AM just because the indentation felt wrong. My superpower? Making complex systems look so simple your grandmother could use them. I believe good documentation is like flossing - everyone knows they should do it, but I'm one of the few who actually does both. Currently seeking opportunities where I can build meaningful tech, preferably at places that don't mind the occasional dad joke in code comments. Let's create something awesome together!",
